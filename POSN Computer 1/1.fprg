@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="GGG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-10-11 11:34:17 AM"/>
+        <attribute name="created" value="R0dHO0NPTTRfNTU7MjU2MS0xMC0xMTsxMTowNTozNCBBTTsxOTQ5"/>
+        <attribute name="edited" value="R0dHO0NPTTRfNTU7MjU2MS0xMC0xMTsxMTozNDoxNyBBTTsxOzIwNjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="min" type="Integer" array="False" size=""/>
+            <declare name="max" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="max" expression="n"/>
+            <assign variable="min" expression="n"/>
+            <while expression="n&lt;&gt;0">
+                <input variable="n"/>
+                <if expression="max&lt;n">
+                    <then>
+                        <assign variable="max" expression="n"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="min&gt;n">
+                    <then>
+                        <assign variable="min" expression="n"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="min" newline="True"/>
+            <output expression="max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
